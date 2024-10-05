@@ -6,7 +6,7 @@ import { encontrouOuNao, iniciaEvento, pegaCaixaResultado, pegaValueDoInput} fro
 iniciaEvento("find", "click", encontraPrimeiroElemento);
 
 function encontraPrimeiroElemento(){
-    const listaFind = pegaValueDoInput("listaFind").split('')
+    const listaFind = pegaValueDoInput("listaFind").split(',')
     const valorParaBuscarFind = pegaValueDoInput("valorParaBuscarFind")
     const caixaResultado = pegaCaixaResultado("caixaResultado__Find")
     const executaFind = listaFind.find((e) => e == valorParaBuscarFind)
@@ -24,7 +24,7 @@ function encontraPrimeiroElemento(){
 iniciaEvento("filter", "click", encontraTodosElementos);
 
 function encontraTodosElementos(){
-    const listaFilter = pegaValueDoInput("listaFilter").split('')
+    const listaFilter = pegaValueDoInput("listaFilter").split(',')
     const valorParaBuscarFilter = pegaValueDoInput("valorParaBuscarFilter")
     const executaFilter = listaFilter.filter((e) => e == valorParaBuscarFilter)
     const caixaResultado = pegaCaixaResultado("caixaResultado__Filter")
