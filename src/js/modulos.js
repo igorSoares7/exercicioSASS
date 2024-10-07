@@ -22,6 +22,14 @@ export function pegaCaixaResultado(id){
     return resultado
 }
 
+export function encontrarElemento(listaFind, elemento){
+    return listaFind.find((e) => e == elemento)
+}
+
+export function filtraElemento(listaFilter, elemento){
+    return listaFilter.filter((e) => e == elemento)
+}
+
 
 
 // export function encontrouOuNao(resultado, undefined, caixaResultado){
