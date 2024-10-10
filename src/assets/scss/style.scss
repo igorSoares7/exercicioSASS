@@ -8,27 +8,28 @@ main{
     height: 100vh;
 }
 
-.caixaPrincipal{
+.caixa-principal{
    @include displayFlex(column, center, center);
    padding: 15px 20px;
    gap: 15px;
    background-color: $backgroundBox;
    
-   #caixaResultado__Find, #caixaResultado__Filter{
+   .caixa-resultado{
     @include border(3px);
     text-align: center;
     background-color: $corResultado;
     color:whitesmoke;
     width: 155px;
-    
-    
+    padding: 10px; 
    }
-   input, button, #caixaResultado__Find, #caixaResultado__Filter{
+
+   &__input{
     padding: 10px;
-  
    }
-   button{
+   
+   &__botao{
     @include border(3px);
+    padding: 10px; 
     background-color: $backgroundButton;
     width: 180px;
     color: whitesmoke;
